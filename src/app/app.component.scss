@@ -1,6 +1,7 @@
 .main-container {
   height: 100%;
   display: flex;
+  overflow: hidden;
   .main-sidebar {
     min-width: 500px;
     max-width: 500px;
@@ -12,6 +13,7 @@
       background-color: #f6f7fb;
       height: calc(100% - 32px);
       padding: 60px;
+      overflow: auto;
     }
   }
 }

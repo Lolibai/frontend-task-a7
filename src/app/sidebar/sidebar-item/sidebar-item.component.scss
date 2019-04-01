@@ -3,6 +3,7 @@
 .item-container {
   height: 135px;
   background-color: $main-color;
+  border-bottom: 1px solid #9faec1;
   label {
     text-transform: uppercase;
     color: $proj-dark-bg-label;
