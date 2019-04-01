@@ -1,0 +1,12 @@
+<div class="sidebar-container">
+  <app-logo></app-logo>
+  <div class="sidebar-items container">
+    <app-sidebar-item
+      *ngFor="let item of menu.items"
+      [_icon]="item.icon"
+      [_label]="item.label"
+      [_link]="item.link"
+      (click)="selectedMenuData.emit(item)"
+    ></app-sidebar-item>
+  </div>
+</div>

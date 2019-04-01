@@ -1,0 +1,71 @@
+<div class="contaner-fluid offer-card-container">
+  <div class="row offer-card-row">
+    <img
+      [src]="'http://' + item.images[0].url"
+      class="card-image p-0 col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-6"
+    />
+    <div
+      class="card-info-container p-0 col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-6"
+    >
+      <div class="card-title-container">
+        <div class="card-title">{{ item.name }}</div>
+        <div class="card-subtitle">
+          {{ item.location.city }}, {{ item.location.canton }}
+        </div>
+      </div>
+      <div class="card-progress-container">
+        <div class="start-end-container">
+          <div class="start">Available to invest</div>
+          <div class="end">{{ item.available_to_invest }}</div>
+        </div>
+        <div class="progress">
+          <div
+            class="progress-bar"
+            role="progressbar"
+            [style.width]="
+              (item.available_to_invest * 100) / item.investment_goal + '%'
+            "
+            [attr.aria-valuenow]="item.available_to_invest"
+            aria-valuemin="0"
+            [attr.aria-valuemax]="item.investment_goal"
+          ></div>
+        </div>
+      </div>
+      <div class="card-info container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="card-info-item">
+              <span>Purchase cost</span>
+              <span>{{ item.purchase_price }}</span>
+            </div>
+            <div class="card-info-item">
+              <span>Min. Investment</span>
+              <span>{{ item.minimum_investment }}</span>
+            </div>
+            <div class="card-info-item">
+              <span>Investment type</span>
+              <span>{{ item.type }}</span>
+            </div>
+          </div>
+          <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12 col-xl-6">
+            <div class="card-info-item">
+              <span>Mortage(LTV)</span>
+              <span>{{ item.loan_to_value }}%</span>
+            </div>
+            <div class="card-info-item">
+              <span>Holding Period</span>
+              <span>{{ item.holding_period }}</span>
+            </div>
+            <div class="card-info-item">
+              <span>Expected return on equity</span>
+              <span>{{ item.expected_roi }}%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="more-details">
+        <button>more details</button>
+      </div>
+    </div>
+  </div>
+</div>

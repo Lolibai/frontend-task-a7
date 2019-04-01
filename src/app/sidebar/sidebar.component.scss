@@ -1,0 +1,5 @@
+@import '../../assets/sass/variables';
+.sidebar-container {
+  background-color: $main-color;
+  height: calc(100% + 78px);
+}

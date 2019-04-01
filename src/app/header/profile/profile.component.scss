@@ -1,0 +1,13 @@
+@import '../../../assets/sass/variables';
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  i {
+    margin: 0 10px;
+    font-size: 22px;
+    color: $main-color;
+  }
+}

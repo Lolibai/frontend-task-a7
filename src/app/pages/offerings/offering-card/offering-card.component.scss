@@ -1,0 +1,69 @@
+@import '../../../../assets/sass/variables';
+
+.offer-card-container {
+  .offer-card-row {
+    .card-image {
+      height: 100%;
+    }
+    .card-info-container {
+      .card-title-container {
+        padding: 20px 30px;
+        background: $main-color;
+        .card-title {
+          color: $proj-dark-bg-label;
+        }
+        .card-subtitle {
+          color: $proj-dark-bg-label;
+        }
+      }
+      .card-progress-container {
+        border-bottom: 1px solid $proj-dark-bg-label;
+        padding: 20px 30px;
+        .start-end-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 10px;
+          .start {
+            font-weight: bold;
+          }
+          .end {
+            font-weight: bold;
+          }
+        }
+        .progress {
+          height: 10px;
+          background: #fef7ef;
+          .progress-bar {
+            height: 10px;
+            background: linear-gradient(to right, #f18142, #fcb562);
+            border-radius: 0.25rem;
+          }
+        }
+      }
+      .card-info {
+        .card-info-item {
+          height: 56px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-bottom: 1px solid $proj-dark-bg-label;
+        }
+      }
+      .more-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 15px;
+        button {
+          background: $proj-orange;
+          height: 65px;
+          width: 210px;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

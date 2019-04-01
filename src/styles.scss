@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/sass/variables';
+
+html, body {
+  height: 100%;
+}
+
+.proj-badge {
+  position: absolute;
+  color: #FFF;
+  background-color: #dc7234;
+  top: -20px;
+  right: -15px;
+}

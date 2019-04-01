@@ -1,0 +1,36 @@
+@import '../../../assets//sass/variables';
+
+.item-container {
+  height: 135px;
+  background-color: $main-color;
+  label {
+    text-transform: uppercase;
+    color: $proj-dark-bg-label;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  i {
+    color: $proj-dark-bg-label;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $main-color-hover;
+  }
+}
+
+.item-container, .item-container i, .item-container label {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.active {
+  border-left: 4px solid $proj-dark-bg-label;
+}

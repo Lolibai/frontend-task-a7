@@ -1,0 +1,17 @@
+.main-container {
+  height: 100%;
+  display: flex;
+  .main-sidebar {
+    min-width: 500px;
+    max-width: 500px;
+    flex: 1;
+  }
+  .content-container {
+    flex: 3;
+    .main-conent {
+      background-color: #f6f7fb;
+      height: calc(100% - 32px);
+      padding: 60px;
+    }
+  }
+}

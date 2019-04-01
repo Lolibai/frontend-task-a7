@@ -1,0 +1,43 @@
+{
+  "offerings": [
+    {
+      "id": "04e20b7b-e4b1-4916-b642-5a25017dafb0",
+      "name": "Residential Building in Concise",
+      "slug": "meyrin",
+      "status": "close",
+      "location": {
+        "address1": "En Chenaux 6",
+        "address2": "``",
+        "zip": "1426",
+        "city": "Concise",
+        "country": "ch",
+        "district": "``",
+        "canton": "Vaud"
+      },
+      "type": "co_ownership",
+      "purchase_price": 6800000,
+      "loan_to_value": 60.29,
+      "categories": [],
+      "expected_roi": 0,
+      "minimum_investment": 50000,
+      "holding_period": "7 years",
+      "map": "46.8520645|6.718568899999999",
+      "description": "Offering description",
+      "is_coming_soon": 0,
+      "is_waiting_list": 1,
+      "interested_investors": 5,
+      "available_to_invest": 300000,
+      "investment_goal": 1500000,
+      "images": [
+        {
+          "url": "res.cloudinary.com/foxstone/image/asset/v1525188157/04e20b7b-e4b1-4916-b642-5a25017dafb0/bfsykq4edf4x96dradb2.jpg"
+        }
+      ],
+      "videos": [
+        {
+          "iframe_html": "<iframe width=\\\"100%\\\" height=\\\"386\\\" src=\\\"https://www.youtube.com/embed/2uxFYFpCiXY?rel=0\\\" frameborder=\\\"0\\\" allow=\\\"autoplay; encrypted-media\\\" allowfullscreen></iframe>"
+        }
+      ]
+    }
+  ]
+}

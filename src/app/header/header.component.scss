@@ -1,0 +1,26 @@
+@import '../../assets/sass/variables';
+
+.header-container {
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 40px;
+    i, h1 {
+      color: $proj-dark-bg-label;
+      text-transform: capitalize;
+      font-size: 22px;
+      margin: 0 30px;
+    }
+  }
+  .header-tools {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

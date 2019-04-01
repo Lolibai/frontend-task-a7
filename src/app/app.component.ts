@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'test-task-frontend-a7';
+  selectedItem = {} as any;
+  constructor(ef: ElementRef) {
+    ef.nativeElement.style.height = '100%'
+  }
+
+  setSelectedMenuItem(item) {
+    this.selectedItem = item
+  }
 }
