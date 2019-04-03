@@ -8,6 +8,12 @@ export class Menu {
   }
 
   find(path) {
-    return this.items.find(item => path.includes(item.link))
+    return (
+      this.items.find(item => path.includes(item.link)) || {
+        icon: 'gavel fa-flip-horizontal',
+        label: 'dashboard',
+        link: '/dashboard'
+      }
+    )
   }
 }

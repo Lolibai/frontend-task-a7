@@ -5,7 +5,7 @@
   ></app-sidebar>
   <div class="content-container">
     <app-header
-      [_icon]="selectedItem.icon"
+      [_icon]="selectedItem.icon || 'gavel fa-flip-horizontal'"
       [_headTitle]="selectedItem.label"
     ></app-header>
     <div class="main-conent"><router-outlet></router-outlet></div>
