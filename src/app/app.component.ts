@@ -14,12 +14,9 @@ export class AppComponent {
   } as MenuItem;
   constructor(ef: ElementRef) {
     ef.nativeElement.style.height = '100%'
-    console.log('this.selectedItem: ', this.selectedItem);
   }
 
   setSelectedMenuItem(item) {
-    console.log('item: ', item);
     this.selectedItem = item
-    console.log('this.selectedItem: ', this.selectedItem);
   }
 }

@@ -11,7 +11,6 @@ export class OfferingCardComponent implements OnInit {
   item: Offering;
 
   @Input() set _item(newValue) {
-    console.log('newValue: ', newValue);
     this.item = newValue
   }
   constructor() {}
